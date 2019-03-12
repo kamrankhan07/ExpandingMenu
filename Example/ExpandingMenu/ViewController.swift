@@ -68,7 +68,7 @@ class ViewController: UIViewController {
         menuButton.bottomViewAlpha = 0.1
         menuButton.bottomViewColor = .black
         menuButton.titleTappedActionEnabled = false
-        menuButton.playSound = false
+        menuButton.playSound = true
         
         
         

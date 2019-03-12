@@ -29,6 +29,7 @@ Pod::Spec.new do |s|
 
   s.platform     = :ios, '8.0'
   s.requires_arc = true
+  s.swift_version = '4.1'
 
   s.source_files = 'ExpandingMenu/Classes/*.swift'
   s.resource_bundles = {

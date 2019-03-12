@@ -45,7 +45,7 @@ open class ExpandingMenuButton: UIView, UIGestureRecognizerDelegate {
     @objc open var menuButtonHapticStyle: HapticFeedbackStyle = .medium
     @objc open var menuItemsHapticStyle: HapticFeedbackStyle = .light
     
-    @objc open var playSound: Bool = false {
+    @objc open var playSound: Bool = true {
         didSet {
             self.configureSounds()
         }
@@ -79,8 +79,8 @@ open class ExpandingMenuButton: UIView, UIGestureRecognizerDelegate {
     @objc open var titleTappedActionEnabled: Bool = true
     @objc open var expandingDirection: ExpandingDirection = .top
     @objc open var menuTitleDirection: MenuTitleDirection = .left
-    open var expandingAnimations: CustomAnimationOptions = [.move, .menuButtonRotate]
-    open var foldingAnimations: CustomAnimationOptions = [.move, .menuButtonRotate]
+    open var expandingAnimations: CustomAnimationOptions = .default
+    open var foldingAnimations: CustomAnimationOptions = .default
     @objc open var willPresentMenuItems: ((ExpandingMenuButton) -> Void)?
     @objc open var didPresentMenuItems: ((ExpandingMenuButton) -> Void)?
     @objc open var willDismissMenuItems: ((ExpandingMenuButton) -> Void)?

@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = "ExpandingMenu"
-  s.version          = "0.4.1"
+  s.version          = "0.4.2"
   s.summary          = "A menu button expanding vertical."
 
 # This description is used to generate tags and improve search results.
@@ -29,7 +29,7 @@ Pod::Spec.new do |s|
 
   s.platform     = :ios, '8.0'
   s.requires_arc = true
-  s.swift_version = '4.2'
+  s.swift_version = '5.0'
 
   s.source_files = 'ExpandingMenu/Classes/*.swift'
   s.resource_bundles = {
